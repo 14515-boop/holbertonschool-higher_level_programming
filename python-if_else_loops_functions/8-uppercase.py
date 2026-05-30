@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def uppercase(str):
+def uppercase(text):
     """print a string in uppercase using ASCII conversion only."""
     result = ""
     for ch in text:
