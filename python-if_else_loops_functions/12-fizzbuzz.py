@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+def fizzbuzz():
 """print numbers from 1 to 100 with FizzBuzz substitution."""
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
@@ -9,4 +10,3 @@ for i in range(1, 101):
         print("Buzz", end=" ")
     else:
         print(i, end=" ")
-        
