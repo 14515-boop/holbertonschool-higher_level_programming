@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from ooo import add
 
-if __name__ != "__main__":
+if __name__ == "__main__":
     a = 10
     b = 5
 
