@@ -7,3 +7,4 @@ for i in matrix:
         m.append(j**2)
     new_matrix.append(m)
 print(new_matrix)
+def square_matrix_simple():
