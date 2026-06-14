@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-matrix = [[1, 2 ,3], [4, 5, 6], [7, 8, 9]]
-new_matrix = []
-for i in matrix:
-    m = []
-    for j in i:
-        m.append(j**2)
-    new_matrix.append(m)
-print(new_matrix)
-def square_matrix_simple():
+def square_matrix_simple(matrix=[]):
+    new_matrix = []  # Orijinala toxunmamaq üçün yeni boş matris yaradırıq
+    
+    for row in matrix:
+        new_row = []  # Hər sətir üçün yeni boş sətir yaradırıq
+        for x in row:
+            new_row.append(x ** 2)  # Elementin kvadratını yeni sətirə əlavə edirik
+        new_matrix.append(new_row)  # Hazır olan sətiri yeni matrisə əlavə edirik
+        
+    return new_matrix
