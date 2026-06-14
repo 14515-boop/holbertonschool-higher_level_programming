@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = []  # Orijinala toxunmamaq üçün yeni boş matris yaradırıq
+    new_matrix = []
     
     for row in matrix:
-        new_row = []  # Hər sətir üçün yeni boş sətir yaradırıq
+        new_row = []
         for x in row:
-            new_row.append(x ** 2)  # Elementin kvadratını yeni sətirə əlavə edirik
-        new_matrix.append(new_row)  # Hazır olan sətiri yeni matrisə əlavə edirik
+            new_row.append(x ** 2)
+        new_matrix.append(new_row)
         
     return new_matrix
