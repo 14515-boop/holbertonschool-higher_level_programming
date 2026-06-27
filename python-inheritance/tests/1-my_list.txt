@@ -18,3 +18,10 @@
 [-8, 1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5, -8]
+>>> empty = MyList()
+>>> print(empty)
+[]
+>>> empty.print_sorted()
+[]
+>>> print(empty)
+[]
