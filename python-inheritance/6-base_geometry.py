@@ -5,4 +5,4 @@
 class BaseGeometry():
     """ihfgjhfgh"""
     def area(self):
-        pass
+        return
