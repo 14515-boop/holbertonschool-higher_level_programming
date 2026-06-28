@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Shape module."""
 
+
 from abc import ABC, abstractmethod
 
 
