@@ -1,41 +1,42 @@
-The ``BaseGeometry`` module
-===========================
+Test for BaseGeometry
+=====================
 
-Using ``BaseGeometry`` class
-----------------------------
+Import the class:
 
->>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
-Create an instance:
+Create an object:
 
->>> bg = BaseGeometry()
+    >>> bg = BaseGeometry()
 
-The area method is not implemented:
+Test area():
 
->>> bg.area()
-Traceback (most recent call last):
-...
-Exception: area() is not implemented
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
 
-The integer_validator method accepts positive integers:
+Test integer_validator() with a valid integer:
 
->>> bg.integer_validator("width", 10)
+    >>> bg.integer_validator("width", 5)
 
-It raises a TypeError if the value is not an integer:
+Test integer_validator() with a string:
 
->>> bg.integer_validator("width", "10")
-Traceback (most recent call last):
-...
-TypeError: width must be an integer
+    >>> bg.integer_validator("width", "5")
+    Traceback (most recent call last):
+    ...
+    TypeError: width must be an integer
 
-It raises a ValueError if the value is less than or equal to zero:
+Test integer_validator() with zero:
 
->>> bg.integer_validator("width", 0)
-Traceback (most recent call last):
-...
-ValueError: width must be greater than 0
+    >>> bg.integer_validator("width", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: width must be greater than 0
 
->>> bg.integer_validator("height", -5)
-Traceback (most recent call last):
-...
-ValueError: height must be greater than 0
+Test integer_validator() with a negative integer:
+
+    >>> bg.integer_validator("height", -8)
+    Traceback (most recent call last):
+    ...
+    ValueError: height must be greater than 0
