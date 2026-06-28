@@ -3,5 +3,5 @@
 
 
 class BaseGeometry():
-    """hfghgfhgbhkjgdfhjkdfhgdhfgkdfh"""
+    """hfghgfhgbhkjgdhfgkdfh"""
     pass
