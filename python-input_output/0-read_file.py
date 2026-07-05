@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """Module for reading and printing a UTF-8 text file."""
 
 
